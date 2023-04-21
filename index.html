@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Railway Ticket Booking</title>
+        <link rel="stylesheet" href="stylings.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="head">Railway Ticket Reservation System</h1>
+        </div>
+        <div class="navigation"> 
+    		<ul>
+    		<li><a href="index.html" id="onlink">HOME</a></li>
+    		<li><a href="meal.html">MEALS</a></li>
+    		<li><a href="service.html">SERVICE</a></li>
+    		<li><a href="contact.html">CONTACT US</a></li>
+    		</ul>
+    		</div><br>
+        <h2 class="head1">Book Your Ticket</h2>
+        <div class="booking">
+        <section>
+          <form>
+           <ul>
+               <b class="fsize"> From &emsp;&nbsp&nbsp&nbsp&nbsp: <input type="text" placeholder="Enter your starting station" required> </b> <br> <br>
+               <b class="fsize"> To &emsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <input type="text" placeholder="Enter your destination station" required> </b> <br> <br>
+               <b class="fsize">  Date&emsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: <input type="Date" placeholder="dd-mm-yy" required>  </b> <br>  <br>
+               <label class="fsize"><strong> Class &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </strong> </label>
+                   <select id="class" name="class" required>
+                    <option value="select">SELECT</option>    
+                    <option value="1AC">1AC</option>
+                    <option value="2AC">2AC</option>
+                    <option value="3AC">3AC</option>
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="Chair">Chair</option> <br> 
+                    </select>
+            </ul>
+            </form>
+            <button class="submit" type="button" onclick="trainB()">Book Ticket</button>
+
+    <div class="form-popup" id="bookTrain">
+    <div class="popup">
+    <h1>Your Ticket Has Been Booked Successfully</h1> <br>
+    <h2>#Thank You</h2>
+    <button type="button" class="hide" onclick="trainC()">Close</button>
+    </div> </div>
+    </section>
+    <script src="main.js"></script>  
+    </body>
+</html>

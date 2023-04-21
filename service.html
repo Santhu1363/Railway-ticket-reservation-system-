@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Railway Ticket Booking</title>
+        <link rel="stylesheet" href="stylings.css"/>
+    </head>
+    <body background="">
+    <div class="main">
+            <h1 class="head">Railway Ticket Reservation System</h1>
+            <div class="navigation">
+    		  <ul>
+    		     <li><a href="index.html">HOME</a></li>
+    		     <li><a href="meal.html">MEALS</a></li>
+    		     <li><a href="service.html" id="onlink">SERVICE</a></li>
+    		     <li><a href="contact.html">CONTACT US</a></li>
+    		 </ul>
+            </div>
+
+    <h1 class="serve">Available Services</h1><br><br>
+    <div class="serve2">
+        <h2 class="serve1">Book A Wheel Chair </h2>
+           <form>
+           <ul>
+               <b>Enter Station&emsp;<input type="text" placeholder="Enter station code"> </b> <br> <br>
+               <b>PNR No.&emsp;&emsp;&emsp;<input type="text" placeholder="Enter PNR number"> </b> <br> <br>
+               <b>Contact No.&emsp;&nbsp<input type="text" placeholder="Enter phone number"> </b> <br><br> 
+               <b>Price - ₹300</b><br><br>
+               <button class="submit" type="button" onclick="openForm()">Book Now</button>
+            <div class="form-popup" id="myForm">
+            <div class="popup">
+               <h1>Your Service is Booked</h1>
+               <h2>Thank You</h2>
+               <button type="button" class="hide" onclick="closeForm()">Close</button>
+           </div>
+           </div>
+          </ul>
+          </form>
+    </div>
+    <div class="serve3">
+    <h2 class="serve1">Book A Waiting Hall</h2>
+       <form>
+       <ul>
+          <b>Enter Station&emsp;<input type="text" placeholder="Enter station code"> </b> <br> <br>
+          <b>PNR No.&emsp;&emsp;&emsp;<input type="text" placeholder="Enter PNR number"> </b> <br> <br>
+          <b>Contact No.&emsp;&nbsp;<input type="text" placeholder="Enter phone number"> </b> <br> <br>
+          <b>Price - ₹600 for 24hrs</b><br><br>
+          <button class="submit" type="button" onclick="openForm()">Book Now</button>
+          <div class="form-popup" id="myForm">
+             <div class="popup">
+               <h1>Your Service is Booked</h1>
+               <h2>Thank You</h2>
+               <button type="button" class="hide" onclick="closeForm()">Close</button>
+             </div>
+          </div>
+        </ul>
+       </form>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

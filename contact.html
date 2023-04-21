@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Railway Ticket Booking</title>
+        <link rel="stylesheet" href="stylings.css"/>
+    </head>
+    <body>
+    
+        <div class="main">
+            <h1 class="head">Railway Ticket Reservation System</h1>
+          <div class="navigation">
+    		<ul>
+    		<li><a href="index.html" >HOME</a></li>
+    		<li><a href="meal.html">MEALS</a></li>
+    		
+    		<li><a href="service.html">SERVICE</a></li>
+    		<li><a href="contact.html"id="onlink">CONTACT US</a></li>
+    		</ul>
+    		</div><br><br>
+    	<div class="contact">
+       <h1><center><u>Contact US</u></h1> </center>
+  
+     <form>
+     First Name&emsp;<input type="text" name="First_Name" required > &nbsp;&nbsp;<br><br>
+     Last Name&emsp;<input type="name" name="Last_Name" required> <br> <pre></pre>
+     Contact No. <input type="text" name="Contact" required> <br> <pre></pre>
+     Query  &emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Query" required> <br> <pre></pre>
+     Gender:-
+      <input type="radio" name="gender" value="male"> Male 
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other <br> <pre></pre>
+    </form>
+  <pre></pre>&emsp;&emsp;
+   <button class="open-button" onclick="openForm()">Submit</button>
+    <div class="form-popup" id="myForm">
+    <div class="popup">
+    <h1>Thanks for Contacting US</h1> <br>
+    <h2>We will get back to you shortly</h2>
+    <button type="button" class="hide" onclick="closeForm()">Close</button>
+    </div> </div>
+     <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Email Us&nbsp;-&nbsp;helpdesk@erail.gov.in</h1>
+      </div>
+      <script src="main.js"></script>  
+   </body>
+</html>
